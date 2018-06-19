@@ -77,7 +77,7 @@ In order to add this feature, you have to follow the steps bellow :
   
    1 - If you want to use values collected in your survey, a way to do it proprely, you should consider to use Embedded Data. Here how to use Embedded Data : 
 
-    Qualtrics.SurveyEngine.setEmbeddedData( 'Score_Anxiete', "VALUE OF YOUR SURVEY THAT U CAN GET VIA THE PIPED TEXT PATH" );
-		var score_anxi = Qualtrics.SurveyEngine.getEmbeddedData('Score_Anxiete') ;
+    	Qualtrics.SurveyEngine.setEmbeddedData( 'Score_Anxiete', "VALUE OF YOUR SURVEY THAT U CAN GET VIA THE PIPED TEXT PATH" );
+	var score_anxi = Qualtrics.SurveyEngine.getEmbeddedData('Score_Anxiete') ;
   
   Here, Qualtrics.SurveyEngine.setEmbeddedData is going to affect the value you want to save in the EmbeddedData. And to use it after, you just have to call the getEmbeddedData method which will return the value of the variable you gave in parameter. It is important in order to use those two methods to create the EmbeddedData. To Do that, click on the "Survey Flow" item (it's on the top of the page). And after you cliked on item, click on "Add Below" and "EmbeddedData". Create your variable and click on Move to place this green block on the top of your Flow. That's it, you have created an Embedded Data, you can use to save variable values. 
