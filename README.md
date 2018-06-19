@@ -41,10 +41,7 @@ In order to add this feature, you have to follows the steps bellow :
       Qualtrics.SurveyEngine.addOnload(function()
     {
       /*Place your JavaScript here to run when the page loads*/
-      
-      Qualtrics.SurveyEngine.setEmbeddedData( 'Score_Anxiete', "${gr://SC_9QE7bLfcIAB1red/WeightedMean}" );
-      Qualtrics.SurveyEngine.setEmbeddedData( 'Score_Evitement', "${gr://SC_3TKDrnueR366UId/WeightedMean}" );
-      
+        
       //Initialization of the Facebook SHarer Window 
       window.fbAsyncInit = function() {    	
         FB.init({
