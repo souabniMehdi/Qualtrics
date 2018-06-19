@@ -1,10 +1,11 @@
 The objective of the following documentation is to provides a Facebook sharring feature to a survey developped in Qualtrics. 
-In order to add this feature, you have to follows the steps bellow : 
+In order to add this feature, you have to follow the steps bellow : 
   
   -- Initialize the facebook environnement
   1 - Go to https://developers.facebook.com/ and click on Add New App. Create your App will provide you an unique App Id (we will use it) 
-  2 - In the Main page of your app, Go to the Basic section menu. There Enter the display name, the app domains, the privacy policy URL (follow instructions present on this URL to get a Privacy Policy URL: https://termsfeed.com/blog/privacy-policy-url-facebook-app/ ). Be careful to also add a platform. For our case it's a website. In this field, enter the URL so want to use.
-  3 - Finally, don't forget to turn to ON the status of your app in order to allows other users to use your applciation. 
+  2 - In the Main page of your app, Go to the Basic section menu. There, enter the display name, the app domains, the privacy policy URL (follow instructions present on this URL to get a Privacy Policy URL: https://termsfeed.com/blog/privacy-policy-url-facebook-app/ ). Be careful to also add a platform. For our case it's a website. In this field, enter the URL so want to use. 
+  	- I draw your attention to the fact that the URL you enter in the URL field should be the same as the one you added in the app domains field. If you didn't enter the same one, you'll get a "Can't load URL" error when trying to open the facebook share dialog box. 
+  3 - Finally, don't forget to turn to ON the status of your app in order to allows other users to use your applciation. (Click on the green button on the top of the screen, the initial value is OFF whenyou create your app. 
   3 - At this step you have installed your facebook environement. We can now focus on the implemantation. 
   
   -- Implemantation of the facebook sharing 
@@ -73,10 +74,10 @@ In order to add this feature, you have to follows the steps bellow :
    6 - At this point, your survey should now integrate the facebook sharing feature.  
 
    EXTRA POINT : 
-   
-   1 - If you get a 
-   2 - If you want to use values collected in your survey, a way to do it proprely, you should consider to use Embedded Data. Here how to use Embedded Data : 
+  
+   1 - If you want to use values collected in your survey, a way to do it proprely, you should consider to use Embedded Data. Here how to use Embedded Data : 
 
     Qualtrics.SurveyEngine.setEmbeddedData( 'Score_Anxiete', "VALUE OF YOUR SURVEY THAT U CAN GET VIA THE PIPED TEXT PATH" );
 		var score_anxi = Qualtrics.SurveyEngine.getEmbeddedData('Score_Anxiete') ;
   
+  Here, Qualtrics.SurveyEngine.setEmbeddedData is going to affect the value you want to save in the EmbeddedData. And to use it after, you just have to call the getEmbeddedData method which will return the value of the variable you gave in parameter. It is important in order to use those two methods to create the EmbeddedData. To Do that, click on the "Survey Flow" item (it's on the top of the page). And after you cliked on item, click on "Add Below" and "EmbeddedData". Create your variable and click on Move to place this green block on the top of your Flow. That's it, you have created an Embedded Data, you can use to save variable values. 
