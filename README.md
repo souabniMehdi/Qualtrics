@@ -81,3 +81,17 @@ In order to add this feature, you have to follow the steps bellow :
 	var score_anxi = Qualtrics.SurveyEngine.getEmbeddedData('Score_Anxiete') ;
   
   Here, Qualtrics.SurveyEngine.setEmbeddedData is going to affect the value you want to save in the EmbeddedData. And to use it after, you just have to call the getEmbeddedData method which will return the value of the variable you gave in parameter. It is important in order to use those two methods to create the EmbeddedData. To Do that, click on the "Survey Flow" item (it's on the top of the page). And after you cliked on item, click on "Add Below" and "EmbeddedData". Create your variable and click on Move to place this green block on the top of your Flow. That's it, you have created an Embedded Data, you can use to save variable values. 
+  
+  2 - If you want to add a Twitter SHaring feature, click on Add Javascript like for the facebook sharing. And add the following rows : 
+  
+  	// Opens a pop-up with twitter sharing dialog
+      	var shareURL = "http://twitter.com/share?"; //url base
+      	//params
+	var params = {
+		url: "URL YOU WANT TO SHARE ", 
+		text: TEXT YOU WANT ,
+		via: "sometwitterusername",
+		hashtags: "hashtag1,hashtag2"
+	}
+     	for(var prop in params) shareURL += '&' + prop + '=' + encodeURIComponent(params[prop]);
+      	window.open(shareURL, '', 'left=0,top=0,width=550,height=450,personalbar=0,toolbar=0,scrollbars=0,resizable=0');
