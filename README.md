@@ -9,6 +9,7 @@ In order to add this feature, you have to follow the steps bellow :
   3 - At this step you have installed your facebook environement. We can now focus on the implemantation. 
   
   -- Implemantation of the facebook sharing 
+  
   1 - In your survey, create the block on which you want to add the sharing feature. 
   
   2 - Click on the addJavascript button. 
