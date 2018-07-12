@@ -2,11 +2,15 @@ The objective of the following documentation is to provides a Facebook sharring 
 In order to add this feature, you have to follow the steps bellow : 
   
   -- Initialize the facebook environnement
+  
   1 - Go to https://developers.facebook.com/ and click on Add New App. Create your App will provide you an unique App Id (we will use it) 
+  
   2 - In the Main page of your app, Go to the Basic section menu. There, enter the display name, the app domains, the privacy policy URL (follow instructions present on this URL to get a Privacy Policy URL: https://termsfeed.com/blog/privacy-policy-url-facebook-app/ ). Be careful to also add a platform. For our case it's a website. In this field, enter the URL so want to use. 
-  	- I draw your attention to the fact that the URL you enter in the URL field should be the same as the one you added in the app domains field. If you didn't enter the same one, you'll get a "Can't load URL" error when trying to open the facebook share dialog box. 
+  	- I draw your attention to the fact that the URL you enter in the URL field should be the same as the one you added in the app domains field. If you didn't enter the same one, you'll get a "Can't load URL" error when trying to open the facebook share dialog box.
+	
   3 - Finally, don't forget to turn to ON the status of your app in order to allows other users to use your applciation. (Click on the green button on the top of the screen, the initial value is OFF whenyou create your app. 
-  3 - At this step you have installed your facebook environement. We can now focus on the implemantation. 
+  
+  4 - At this step you have installed your facebook environement. We can now focus on the implemantation. 
   
   -- Implemantation of the facebook sharing 
   
