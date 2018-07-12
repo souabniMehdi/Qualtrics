@@ -14,11 +14,11 @@ In order to add this feature, you have to follow the steps bellow :
   
   -- Implemantation of the facebook sharing 
   
-  1 - In your survey, create the block on which you want to add the sharing feature. 
+   1 - In your survey, create the block on which you want to add the sharing feature. 
   
-  2 - Click on the addJavascript button. 
+   2 - Click on the addJavascript button. 
   
-  3 - At this point, add the following part in the addOnload function : 
+   3 - At this point, add the following part in the addOnload function : 
 
  	window.fbAsyncInit = function() {    	
 		FB.init({
